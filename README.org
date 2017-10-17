@@ -1,0 +1,304 @@
+#+TITLE: Signals and systems    	
+*1.Experiment 1(a)*\\
+    
+•	Problem statement
+(Demo of simple signals)
+
+•	Theory\\
+
+*Definition of signal*\\
+Any time varying physical phenomenon that can convey information is called signal. Some examples of signals are human voice, electrocardiogram, sign language, videos etc. There are several classification of signals such as Continuous time signal, discrete time signal and digital signal, random signals and non-random signals.
+
+           Continuous-time Signal:\\
+ A continuous-time signal is a signal that can be defined at every instant of time. A continuous-time signal contains values for all real numbers along the X-axis. It is denoted by x(t). Figure 1(a) shows continuous-time signal.
+ 
+               	  [[SS pics/pic ss1.jpg]]\\
+					Continuous time signal\\
+
+                                                                                                             [[SS pics/pic ss2.jpg]]\\
+                                                                                                              Discrete-time signal \\
+
+
+
+
+Discrete-time Signal:\\
+ 
+Signals that can be defined at discrete instant of time is called discrete time signal. Basically discrete time signals can be obtained by sampling a continuous-time signal. It is denoted as x(n).Figure 1(b) shows discrete-time signal.
+
+Digital Signal:\\
+ The signals that are discrete in time and quantized in amplitude are called digital signal. The term "digital signal" applies to the transmission of a sequence of values of a discrete-time signal in the form of some digits in the encoded form.
+
+Time-Scaling of Signal:\\
+ Time scaling compresses or dilates a signal by multiplying the time variable by some quantity. If that quantity is greater than one, the signal becomes narrower and the operation is called compression. If that quantity is less than one, the signal becomes wider and the operation is called dilation. Figure 7(a), 7(b), 7(c) shows the signal x(t), compression of signal and dilation of signal respectively.
+ [[SS pics/pic ss17.jpg]]
+ Fig.7(a) Signal x(t)\\
+ [[SS pics/pic ss18.jpg]]	                    
+ Fig.7(b) Compression of signal\\
+  [[SS pics/pic ss19.jpg]]
+  Fig.7(c) Dilation of signal\\
+
+Amplitude-Scaling of Signal:\\
+ There are some important properties of signal such as amplitude-scaling, time-scaling and time-shifting. Among these properties now we are discussing about amplitude scaling. Consider a signal x(t) which is multiplying by a constant 'A' and this can be indicated by a notation x(t) → Ax(t). For any arbitrary 't'  this multiplies the signal value x(t) by a constant 'A'. Thus, x(t) → Ax(t) multiplies x(t) at every value of 't' by a constant 'A'. This is called amplitude-scaling. If the amplitude-scaling factor is negative then it flips the signal with the t-axis as the rotation axis of the flip. If the scaling factor is -1 then only the signal will be flip. This is shown in the Figure 6(a), 6(b), 6(c) which is given below.
+              
+        [[SS pics/pic ss14.jpg]]  
+        Fig.6(a) A signal x(t)\\
+        [[SS pics/pic ss15.jpg]]                   
+        Fig.6(b) A signal x(t) scaled by -1\\
+        [[SS pics/pic ss16.jpg]]
+        Fig.6(c) A signal x(t) scaled by 1/2\\
+ 
+
+
+•	Procedure
+1.	Select the required wave by changing the value of the static block.
+2.	You can change the time shift and amplitude of the wave by double clicking on the selected wave xcos block.
+3.	Set the required simulation by going into Simulation->Setup->Final Integration time.
+4.	Click on the run button
+
+
+•	Result
+
+The waveform obtained is the required outcome.
+
+
+*2.Experiment 1(b)*
+
+•	Problem Statement
+
+(Even and odd parts of a signal)
+
+•	Theory\\
+
+Even and Odd Signal:\\
+ 
+An even signal is any signal 'x' such that x(t) = x(-t). On the other hand, an odd signal is a signal 'x' for which x(t) = -x(-t). Even signals are symmetric around the vertical axis, so that they can easily spotted.
+ 	 [[SS pics/pic ss10.jpg]]        
+        Fig.5(a) Odd signal\\	  
+        [[SS pics/pic ss11.jpg]]
+        Fig.5(b) Even signal\\
+ 
+An even signal is one that is invariant under the time scaling t→ - t and an odd signal is one that is invariant under the amplitude and time scaling x(t) → - x(-t).
+A simple way of visualizing even and odd signal is to imazine that the ordinate [x(t)] axis is a mirror. For even signals, the part of x(t) for t > 0 and the part of x(t) for t < 0 are mirror images of each other. In case of an odd signal, the same two parts of the signals are negative mirror images of each other. Some signals are odd, some signals are even and some signals are neither odd nor even. But any signal x(t) can be expressed as a sum of its even and odd parts such as x(t) = xe(t) + xo(t) or we can say that every signal is composed of the addition of an even part and odd part. The even and odd parts of a signal x(t) are 
+ [[SS pics/pic ss12.png]]                       and                    [[SS pics/pic ss13.png]]
+                                                     
+Here xe(t) denotes the even part of signal x(t) and xo(t) denotes the odd part of signal x(t). Figure 5(a) and 5(b) shows the odd signal and even signal respectively.                                                                 
+
+•	Procedure
+
+1.Select the first signal required by selecting the value of static block.
+2.Select the second signal by setting the static block as per requirements.
+3.Run the respective codes of the signal chosen on scilab.
+4.Run the xcos environment by setting the integration time in the simulation menu.
+5.Required output is displayed in the plot window.
+
+•	Result\\
+
+The waveform obtained is the final result\\
+
+*3.Experiment 1(c)*\\
+
+•	Problem statement
+
+            (Signal matching using transformation)
+
+•	Theory\\
+Amplitude-Scaling of Signal:There are some important properties of signal such as amplitude-scaling, time-scaling and time-shifting. Among these properties now we are discussing about amplitude scaling. Consider a signal x(t) which is multiplying by a constant 'A' and this can be indicated by a notation x(t) → Ax(t). For any arbitrary 't'  this multiplies the signal value x(t) by a constant 'A'. Thus, x(t) → Ax(t) multiplies x(t) at every value of 't' by a constant 'A'. This is called amplitude-scaling. If the amplitude-scaling factor is negative then it flips the signal with the t-axis as the rotation axis of the flip. If the scaling factor is -1 then only the signal will be flip. This is shown in the Figure 6(a), 6(b), 6(c) which is given below.
+                                      
+  [[SS pics/pic ss14.jpg]]                                 
+   Fig.6(a) A signal x(t)\\
+    [[SS pics/pic ss15.jpg]] 
+    Fig.6(b) A signal x(t) scaled by -1\\
+    [[SS pics/pic ss16.jpg]]
+    Fig.6(c) A signal x(t) scaled by 1\\
+Time-Scaling of Signal:Time scaling compresses or dilates a signal by multiplying the time variable by some quantity. If that quantity is greater than one, the signal becomes narrower and the operation is called compression. If that quantity is less than one, the signal becomes wider and the operation is called dilation. Figure 7(a), 7(b), 7(c) shows the signal x(t), compression of signal and dilation of signal respectively.
+ [[SS pics/pic ss17.jpg]]	 	                    	 	 
+Fig.7(a) Signal x(t)\\
+[[SS pics/pic ss18.jpg]]
+Fig.7(b) Compression of signal\\
+ [[SS pics/pic ss19.jpg]]
+Fig.7(c) Dilation of signal\\
+ Time-Shifting of Signal:In signals and system amplitude scaling, time shifting and time scaling are some important properties. If  a continuous time signal is defined as x(t) = s(t - t1). Then we can say that x(t) is the time shifted version of s(t).
+Consider a simple signal s(t) for 0 < t < 1
+ [[SS pics/pic ss20.jpg]]	 	   
+Fig.8(a) Signal within 0< t < 1\\	
+ [[SS pics/pic ss21.jpg]]
+ Fig.8(b) Signal shifted by -1 sec.\\
+ 
+Now shifting the function  by time t1 = 2 sec.
+  x(t) = s (t-2) = t-2                     for     0 < (t - 2) < 1
+     = t-2                   for   2  < (t - 2 ) < 3
+     Which is simply signal s(t)  with its origin delayed by 2 sec. Now if we shift the signal by t1 = -1 sec. then x(t) = s (t+1) = t+1     for      0 < (t+1) 
+                                         = t+1     for     -1 < t < 0.Which is  simply s(t) with its origin shifted to the left or advance in time by 1 seconds. This time-shifting property of signal is shown in the Figure 8(a), 8(b) and 8(c) given above.
+•	Procedure
+1.	Select any one signal from the first static block.
+2.	Select any one signal from the second static block.
+3.	Give the required inputs in the scifunc block which are present in red.
+4.	Click on the run button.
+5.	Make sure you run the corresponding functions also.
+
+•	Result\\
+The plot shows two graphs plotted on the same window. We can infer whether the signals are same or not.\\
+
+
+*4.Experiment 1(d)*\\
+•	Problem statement
+(Various properties of impulse signals)
+
+
+•	Theory\\
+Impulse Signal: The Dirac delta function or unit impulse or often referred to as the delta function, is the function that defines the idea of a unit impulse in continuous-time. Informally, this function is one that is infinitesimally narrow, infinitely tall, yet integrates to one. Perhaps the simplest way to visualize this as a rectangular pulse from a -D/2 to a +D/2 with a height of 1/D. As we take the limit of this setup as D approaches 0, we see that the width tends to zero and the height tends to infinity as the total area remains constant at one.
+The impulse function is often written as  
+                                                               
+ [[SS pics/pic ss23.jpg]]                    	 
+Fig.9(a)  Dirac delta functoin\\
+[[SS pics/pic ss24.jpg]]
+Fig.9(b) Unit impulse\\
+Since it is quite difficult to draw something that is infinitely tall, we represent the Dirac with an arrow centered at the point it is applied. The dirac delta function and unit impulse are shown in Figure 9(a) and 9(b) respectively.
+The impulse function has some special properties.\\
+ 
+•	 The sampling property.\\
+         [[SS pics/pic ss25.png]]                 
+
+•	 Another important property is the scaling property.\\
+[[SS pics/pic ss26.png]]
+                      
+Since the derivative of the unit step u(t) is zero everywhere except at t=0, the unit impulse is zero everywhere except at t=0. Since the unit step is the integral of the unit impulse, a definite integral of the unit impulse whose integration range includes t=0 must have the value one.
+ [[SS pics/pic ss27.png]]
+            , where u(t) is the unit step.\\
+ This scaling property can not be applied for discrete-time impulse.\\
+•	Procedure
+1.	Using the static block, choose the operation which you want to perform.
+2.	Set the values of the inputs.
+3.	Run the experiment by clicking the run button.
+4.	Make sure you run the required function code in scifunc blocks.
+
+•	Result\\
+The operation which is performed on the impulse signal is shown in the plot obtained.\\
+
+
+
+*5.Experiment 1(e)*\\
+
+•	Problem statement
+(Demo of complex exponential signals)
+
+•	Theory\\
+Real and Complex Exponential Signal: \\
+ 
+Exponential signal is of two types. These two type of signals are real exponential signal and complex exponential signal which are given below.\\
+ 
+Real Exponential Signal:\\  
+ 
+A real exponential signal is defined as\\
+            [[SS pics/pic ss28.png]]                                                            
+Where both "A" and "σ" are real. Depending on the value of "σ" the signals will be different. If "σ" is positive the signal x(t) is a growing exponential and if "σ" is negative then the signal x(t) is a decaying exponential. For σ=0, signal x(t) will be constant. Figure 10(a), 10(b) and 10(c) shows a dc signal, exponentially growing signal and exponentially decaying signal respectively.
+ 	 	[[SS pics/pic ss29.jpg]]                      
+        Fig.10(a) A dc signal \\
+         [[SS pics/pic ss30.jpg]]
+         Fig.10(b) Exponentially growing signal\\
+          [[SS pics/pic ss31.jpg]]
+          Fig.10(c) Exponentially decaying signal\\
+ 
+ 
+    
+                        
+ 
+ Complex exponential Signal:\\
+ 
+The complex exponential signal is given by\\
+                                  [[SS pics/pic ss32.png]]                                                    
+Where "s" is a complex variable and it is defined as\\  
+                                  [[SS pics/pic ss33.png]]                                        
+Therefore\\
+           [[SS pics/pic ss34.png]]                                                   ........................(1)
+Using Eulers identity \\
+              [[SS pics/pic ss35.png]]                                                                    ...............................(2) 
+Substituting eqn.(2) in eqn.(1) we have\\
+ 
+              [[SS pics/pic ss36.png]]                                               
+ A complex exponential signal can not be plot in a two dimentional (2D) graph, it should be plot in a three dimentional graph. Figure given below shows the three dimentional view of a complex exponential signal.
+ 
+Real sines and real cosines can be expressed by the combinations of complex sinusoids through the trigonometric identities\\ 
+                 [[SS pics/pic ss37.png]]                                  and  [[SS pics/pic ss38.png]] \\            
+Complex exponential signal , out of phase complex exponential signal and the addition and substraction of complex exponentials to form the real cosine and real sine are shown in Figure 11(a), 11(b), 11(c) and 11(d) respectively.
+                        [[SS pics/pic ss40.jpg]]  \\
+                        [[SS pics/pic ss3.jpg]]\\
+                                                                                        
+                         [[SS pics/pic ss41.jpg]]                             
+                         By addition \\  
+                         [[SS pics/pic ss42.jpg]]
+                         By subtraction\\
+
+•	Procedure
+1.	Enter the value of exponential power in the constant block which acts as input to the function block.
+2.	Enter the value for both the exponentials.
+3.	Click on the run button.
+4.	Make sure you run both the codes of the scifunc block also.
+
+
+•	Result\\
+Two graphs are obtained by addition and subtraction of exponential signals. View of the graph can be changed by using the cursor to drag the screen in desired directions.
+
+
+*17.Experiment 5(a)*\\
+
+•	Problem statement
+(To demonstrate the convolution and correlation of two continuous-time signals)
+
+•	Theory\\
+Convolution:Convolution is a mathematical operation which can be perform on two signals 'f' and 'g' to produce a third signal which is typically viewed as the modified version of one of the original signals. A convolution is an integral that express the overlap of one signal 'g' as it is shifted over another signal 'f'.
+Convolution of two signals 'f' and 'g' over a finite range [0 → t] can be defined as\\
+                                 [[SS pics/spic1.png]]                                
+Here the symbol [f*g](t) denotes the convolution of 'f' and 'g'. Convolution is more often taken over an infinite range like,\\
+                                 [[SS pics/ss pic1.png]]                  
+ 
+Convolution properties:There are some important properties of convolution that perform on continuous time signal which we have listed below. The commutativity, associativity, distributivity properties are given below.
+ 
+Commutativity	f(t) * g(t) = g(t) * f(t)\\
+Associativity	[f(t) * g(t)] * h(t) = f(t) * [g(t) * h(t)]\\
+Distributivity	f(t) * [g(t) + h(t)] = f(t) * g(t) + f(t) * h(t)\\
+ 
+ 
+•	Procedure
+1.	Select the required signals using the static blocks.
+2.	If a scifunc block is being used,give the required inputs.
+3.	Now run the experiment.
+4.	Make sure you run the scifunc block also.
+
+
+•	Result\\
+The graph obtained is the signal which we get after convolution of the selected signals.\\
+
+
+
+*18.Experiment 5(b)*\\
+
+•	Problem statement
+(To demonstrate the convolution and correlation of two discrete-time signals)
+
+
+•	Theory\\
+Convolution:Convolution is a mathematical operation which can be perform on two signals 'f' and 'g' to produce a third signal which is typically viewed as the modified version of one of the original signals. A convolution is an integral that express the overlap of one signal 'g' as it is shifted over another signal 'f'. 
+The convolution of two discrete time signals f(n) and g(n) over an infinite range can be defined as\\
+                      [[SS pics/ss pic2.png]]                                 
+
+•	Procedure
+1.	Select the required signals using the static blocks.
+2.	If a scifunc block is being used,give the required inputs.
+3.	Now run the experiment.
+4.	Make sure you run the scifunc block also.
+•	Result\\
+The graph obtained is the signal which we get after convolution of the selected signals.
+
+
+
+
+
+
+
+
+
+
+
+
+
